@@ -23,7 +23,7 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
   # Run interaction and accessibility tests with Axe
-  jest-test:
+  interaction-test:
     runs-on: ubuntu-latest
     needs: install-cache
     steps:
